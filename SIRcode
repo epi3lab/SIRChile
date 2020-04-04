@@ -1,3 +1,7 @@
+rm(list = ls())  	# 
+graphics.off() 		# 
+
+
 SIR <- function(time, state, parameters) {
   par <- as.list(c(state, parameters))
   with(par, {
